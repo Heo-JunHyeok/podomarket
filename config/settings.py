@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # plus
     "django.contrib.sites",  # allauth required
     "podomarket",
+    "widget_tweaks",
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
@@ -146,6 +147,6 @@ ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = (
     "account_email_confirmation_done"
 )
 ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = "account_email_confirmation_done"
-
+ACCOUNT_EMAIL_SUBJECT_PREFIX = ""
 # email settings
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
