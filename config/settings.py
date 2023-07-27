@@ -153,5 +153,8 @@ ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = (
 )
 ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = "account_email_confirmation_done"
 ACCOUNT_EMAIL_SUBJECT_PREFIX = ""
+
+# Mixin
+LOGIN_URL = "account_login"
 # email settings
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
